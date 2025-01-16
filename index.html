@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Shopping Store</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="flex w-100 h-[100%] items-center justify-between px-14 py-3 bg-blue-400">
+        <a href="index.html">
+            <h1 class="text-5xl font-bold text-white">Store</h1>
+        </a>
+        <div class="flex items-center justify-between gap-2">
+            <div class="flex flex-col gap-1">
+                <p class="text-white font-bold">Search By Title</p>
+                <input id="search-input" class="border-[2px] rounded-xl p-1" type="text" name="search"
+                    placeholder="Search By Title">
+            </div>
+            <div class="flex flex-col gap-1">
+                <p class="text-white font-bold">Price</p>
+                <input id="upper-limit" class="border-[2px] rounded-xl p-1 w-[100px]" type="number" name="upperlimit"
+                    placeholder="Upper Limit">
+            </div>
+            <div class="flex flex-col gap-1">
+                <p class="text-white font-bold">Price</p>
+                <input id="lower-limit" class="border-[2px] rounded-xl p-1 w-[100px]" type="number" name="lowerlimit"
+                    placeholder="Lower Limit">
+            </div>
+            <div class="flex flex-col gap-1">
+                <p class="text-white font-bold">Rating</p>
+                <input id="rating-input" class="border-[2px] rounded-xl p-1 w-[60px]" type="number" name="rating"
+                    placeholder="Rating">
+            </div>
+        </div>
+        <button id="search-button"
+            class="border-[2px] rounded-xl px-3 py-1 cursor-pointer bg-white text-blue-400 font-bold"
+            type="button">Search</button>
+    </nav>
+    <!-- Navigation ends -->
+
+    <!-- Section that display Items -->
+    <section id="items" class="flex flex-col w-[100vw] h-auto items-center justify-center gap-2 my-3">
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

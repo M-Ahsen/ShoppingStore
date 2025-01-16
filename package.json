@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify",
+    "start": "your-node-server-start-command"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
